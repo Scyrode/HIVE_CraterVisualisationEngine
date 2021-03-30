@@ -1,0 +1,55 @@
+DARK BLUE - 0, 20, 173, 255 - 5.0e+08
+LIGHT BLUE - 0, 156, 255, 255 - 1.0e+09
+GREEN - 0, 255, 37, 255 - 5.0e+09
+YELLOW - 243, 255, 0, 255 - 1.0e+10
+ORANGE - 255, 186, 0, 255 - 5.0e+10
+LIGHT RED - 255, 69, 0, 255 - 1.0e+11
+DARK RED - 157, 7, 0, 255 - 5.0e+11
+
+- Orange Map:
+				if (currentPres < darkBluePres)
+				{
+					particle.pres = new Color32(255, 229, 204, 255);
+				} else if (currentPres < lightBluePres)
+				{
+					particle.pres = new Color32(255, 204, 153, 255);
+				} else if (currentPres < greenPres)
+				{
+					particle.pres = new Color32(255, 178, 102, 255);
+				} else if (currentPres < yellowPres)
+				{
+					particle.pres = new Color32(255, 153, 51, 255);
+				} else if (currentPres < orangePres)
+				{
+					particle.pres = new Color32(255, 128, 0, 255);
+				} else if (currentPres < lightRedPres)
+				{
+					particle.pres = new Color32(153, 76, 0, 255);
+				} else
+				{
+					particle.pres = new Color32(153, 0, 0, 255);
+				}
+
+- Rainbow Map:
+				if (currentPres < darkBluePres)
+				{
+					particle.pres = new Color32(24, 0, 255, 255);
+				} else if (currentPres < lightBluePres)
+				{
+					particle.pres = new Color32(0, 176, 255, 255);
+				} else if (currentPres < greenPres)
+				{
+					particle.pres = new Color32(0, 255, 85, 255);
+				} else if (currentPres < yellowPres)
+				{
+					particle.pres = new Color32(255, 255, 0, 255);
+				} else if (currentPres < orangePres)
+				{
+					particle.pres = new Color32(255, 189, 0, 255);
+				} else if (currentPres < lightRedPres)
+				{
+					particle.pres = new Color32(255, 97, 57, 255);
+				} else
+				{
+					particle.pres = new Color32(255, 0, 0, 255);
+				}
